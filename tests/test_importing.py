@@ -9,7 +9,7 @@ class TestMyModule(unittest.TestCase):
 
     def test_sub_numbers_negative(self):
         result = sub_numbers(-2, 3)
-        self.assertEqual(result, -4)
+        self.assertEqual(result, -5)
 
     def test_sub_numbers_zero(self):
         result = sub_numbers(0, 0)
