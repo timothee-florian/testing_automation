@@ -1,5 +1,5 @@
 import unittest
-from my_module import sub_numbers
+from importing import sub_numbers
 
 class TestMyModule(unittest.TestCase):
 
