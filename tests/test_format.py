@@ -14,7 +14,7 @@ def check_sql_file_names(folder_path, file_name_format):
             print(f"File name '{file_name}' does not match the expected format.")
 
 # Example usage
-folder_path = "/path/to/sql/files"
+folder_path = ".."
 file_name_format = r'^[a-zA-Z0-9_]+\.sql$'
 
 check_sql_file_names(folder_path, file_name_format)

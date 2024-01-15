@@ -3,12 +3,12 @@ import os
 import re
 
 def is_valid_sql_file_name(file_name, pattern):
-    return file_name.endswith(".sql") and pattern.match(file_name)
+    return not file_name.endswith(".sql") or pattern.match(file_name)
 
 class TestSQLFileNames(unittest.TestCase):
 
     def setUp(self):
-        self.folder_path = "/path/to/sql/files"
+        self.folder_path = ".."
         self.file_name_format = re.compile(r'^[a-zA-Z0-9_]+\.sql$')
 
     def test_sql_file_names(self):
