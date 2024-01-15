@@ -8,7 +8,7 @@ def is_valid_sql_file_name(file_name, pattern):
 class TestSQLFileNames(unittest.TestCase):
 
     def setUp(self):
-        self.folder_path = "../python"
+        self.folder_path = ".."
         self.file_name_format = re.compile(r'^[a-zA-Z0-9_]+\.sql$')
 
     def test_sql_file_names(self):
