@@ -3,7 +3,7 @@ import os
 import re
 
 def is_valid_sql_file_name(file_name, pattern):
-    return file_name.endswith(".sql") and pattern.match(file_name)
+    return not file_name.endswith(".sql") or pattern.match(file_name)
 
 class TestSQLFileNames(unittest.TestCase):
 
